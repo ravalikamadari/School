@@ -23,10 +23,10 @@ public class SubjectController : ControllerBase
     
 
     public SubjectController(ILogger<SubjectController> logger,
-    ISubjectRepository student ,ITeacherRepository teacher)
+    ISubjectRepository subject ,ITeacherRepository teacher)
     {
         _logger = logger;
-        _subject = student;
+        _subject = subject;
         _teacher  = teacher;
         
     }
